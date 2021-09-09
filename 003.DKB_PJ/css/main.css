@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* 도깨비 메인 CSS - main.css */
+
+/* 초기화 셋팅 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* 보이는 화면 높이값 채우기 */
+}
+
+body{
+
+    /* 배경 한번에 셋팅하기!
+    background: 색 이미지 반복 고정 위치/크기;
+    background: 색이반고윙/크;   */
+    background: url(../images/bg_mainvisual.jpg)
+    no-repeat fixed center/cover;
+}
+
+/* 1. 상단영역 */
+
+/* 로고 */
+.logo img { /* 이미지 마진 위치 조정 */
+    margin-top: 45px;
+    margin-left: 70px;
+}
+
+/* 2. 메인영역 */
+
+/* 캐릭터 박스 */
+#cbx{
+    width: 90%;
+    /* height: 300px;
+       자식요소 float때문에
+       자식요소를 인식하지 못함!
+       높이값이 없을때 높이값이 안나옴!
+    */
+    margin: 0 auto; /* 마영오! 가로중앙정렬 */
+    /* outline: 5px dashed lime; -> 영역박스 외곽선 표시*/
+}
+
+/* 가상요소로 float해제 */
+.clb::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 개별 캐릭터 박스 공통 */
+.cat{
+    width: 25%; /* 4등분 */
+
+    /* height: 100%;  */
+    /* 높이값이 없으면 auto이고 내용만큼 늘어남 */
+
+    float: left; /* 블록요소가 옆으로 흐르게함 */
+    /* left값을 주면 나는 왼쪽 
+    다른요소는 오른쪽에 올 수 있게 함 */
+
+    /* 안쪽여백 */
+    padding: 5px; /* 안쪽값을 주면서 박스가 커짐 */
+
+    /* 마진, 패딩 포함하기 속성 (bxb)*/
+    box-sizing: border-box;
+
+    /* outline: 2px dotted blue; -> 영역박스 외곽선 표시 */
+}
+
+/* 캐릭터 이미지 */
+.ci>img { /* 직계자식 이미지만!(>) (띄어쓰기는 포함이고, >는 직계) */
+    width: 100%; /* 이미지의 height는 자동(비율유지) */
+}
+
+/* 캐릭터 이름 */
+.ci span{
+    display:block; /* span은 인라인요소라 컨텐츠만 영역이되서 블락요소로 바꾼다 */
+    text-align: center; /* 가로중앙 적용! 이미지도 텍스트얼라인으로 정렬함! */
+    margin-top: -22%; /* 비율로 이미지가 변경되므로 마진도 상대적으로 변경되게함 */
+}
+
+/* 캐릭터 이름 이미지 */
+.ci span img {
+    width: 40%;
+}
+
+/* 캐릭터 이름 첫번째 이미지 숨기기 */
+/* display:none 사용 */
+.ci span img:first-child{display: none;}
+
+/* .cat박스에 마우스 오버시 */
+/* 캐릭터 이름 첫번째 이미지 보이기 */
+/* 원래 이미지는 display:inline */
+/* 이미지 태그 자체가 인라인요소이기 때문에 */
+.cat:hover .ci span img:first-child{
+    display: inline;
+}
+
+/* .cat박스에 마우스 오버시 */
+/* 캐릭터 이름 마지막 이미지 숨기기 */
+.cat:hover .ci span img:last-child{
+    display: none;
+}
+
+/* 캐릭터 설명 박스 */
+.cd {
+    background: url(../images/eachBG.jpg) no-repeat center/cover;
+}
+
+/* 캐릭터설명 타이틀 */
+.cd h3{
+    padding: 20px;
+}
+
+/* 캐릭터설명 문단 */
+.cd p{
+    padding: 10px;
+
+    font: 14px/2 '맑은 고딕', '돋움', arial;
+    /* font 스타일
+    font-style: italic; 
+    
+    두께
+    font-weight: bold;
+    
+    크기
+    font-size: 18px;
+    
+    줄간격
+    line-height: 2; (설정된 글자크기의 배 - 2니까 글자폰트 18px의 2배)
+    
+    글자체
+    font-family: 궁서체;
+     
+        font: 스타일 두께 크기/줄간격 글자체;
+        font: 스 두 크/줄 체; 
+
+    */
+
+    text-align: justify; /* 텍스트 양쪽 정렬(책 쓸때 처럼 양쪽 딱 떨어져 맞는것) */
+
+}
