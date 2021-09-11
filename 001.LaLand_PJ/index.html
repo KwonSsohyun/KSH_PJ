@@ -5,12 +5,26 @@
     <meta charset="UTF-8">
     <title>La La Land</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/component.css">
     <!-- 
         웹 폰트 
         영문 : Limelight / 국문 : Gothic A1(400)
     -->
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Limelight&display=swap" rel="stylesheet">
+
+    <style>
+        /* <!-- 웹폰트관련 class --> */
+        .eng{
+            font-family: 'Limelight', cursive;
+            /* <!-- 영문폰트 --> */
+        }
+        .ko{
+            font-family: 'Gothic A1', sans-serif;
+            /* <!-- 국문폰트 --> */
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -27,16 +41,20 @@
         <section>
             <div class="bg"></div>
             <!-- 웹 폰트 : 영문-->
-            <h1 style="font-family: 'Limelight', cursive;">
+            <h1 class="eng">
                 La La Land
             </h1>
+            <p class="ko">
+               황홀한 사랑 / 순수한 사랑 / 격렬한 열정<br>
+               꿈을 꾸는 사람들을 위한 별들의 도시 <strong>'라라랜드'</strong>
+            </p>
         </section>
     </header> 
     
     <!-- 2. 메인영역 -->
     <main class="cont">
         <!-- 웹 폰트 : 국문-->
-        <h2 style="font-family: 'Gothic A1', sans-serif;">
+        <h2 class="ko">
             안정식 사랑
         </h2>
     </main>
