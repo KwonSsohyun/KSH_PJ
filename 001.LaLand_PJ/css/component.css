@@ -72,12 +72,12 @@
 }
 
 /* 설명 내용 타이틀 */
-.fd .ft{
+.fd .ft{ /* 작은 타이틀 */
     color: #e1f33a6c;
     padding: 50px 40px 0px;
     font-style: italic;
 }
-.fd h2{
+.fd h2{ /* 큰 타이틀 */
     color: #e1f33a;
     padding: 0px 40px 0px;
     line-height: 35px;
