@@ -18,6 +18,8 @@
 
 /* 개별 4계절 박스 공통 */
 .box{ /* 박스 -> 원 (박스) */
+    margin: 0 auto;
+    margin-top: 60px;
     width: 250px;
     height: 250px; 
     border-radius: 70%;
@@ -53,4 +55,18 @@
 /* 4계절 - 마우스오버시 컬러 이미지 보이기 */
 .flx:hover .box span img:first-child{
     display: none;
+}
+
+/* 설명 박스 - 기본설정값 */
+.fd{
+    height: 0px;
+    overflow: auto;
+    margin-top: 15px;
+    border-radius: 10px 0 0 10px;
+    background: url(../assets/img/txt_bg_2.jpg) no-repeat center/cover;
+    transition: height .8s ease-in-out;
+}
+/* 설명 박스 - 접혔다 펴졌을때 설정값 */
+.flx:hover .fd{
+    height: 330px;
 }
