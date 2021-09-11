@@ -81,4 +81,36 @@ section *{
 }
 
 
+/* 3. 하단영역 */
+.info{
+    position:fixed; 
+    bottom:0px; 
+    height:100px; 
+    width:100%; 
+    padding: 15px;
+    float: left;
+    background:rgba(0, 0, 0, 0.418); 
+    display: block;
+    text-align: left;
+    color: aliceblue;
 
+}
+
+/* 하단링크 */
+ul.bm{
+
+    text-align: left;
+    padding: 15px;
+    list-style: none;
+}
+
+ul.bm::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul.bm li{
+    float:left;
+    padding: 0 5px;
+}
