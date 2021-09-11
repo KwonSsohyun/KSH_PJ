@@ -70,3 +70,24 @@
 .flx:hover .fd{
     height: 330px;
 }
+
+/* 설명 내용 타이틀 */
+.fd .ft{
+    color: #e1f33a6c;
+    padding: 50px 40px 0px;
+    font-style: italic;
+}
+.fd h2{
+    color: #e1f33a;
+    padding: 0px 40px 0px;
+    line-height: 35px;
+}
+
+/* 설명 내용 */
+.fd p{
+    color: rgba(255, 255, 255, 0.932);
+    border: 0;
+    padding: 25px 40px 40px;
+    line-height: 1.8;
+    text-align: justify;
+}
