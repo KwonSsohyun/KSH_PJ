@@ -75,7 +75,7 @@ video {
 }
 
 /* 배경 요소 앞으로 z-index */
-section h1,p{
+section *{
     position: relative;
     z-index: 1000;
 }
