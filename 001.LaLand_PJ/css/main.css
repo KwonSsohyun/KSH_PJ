@@ -136,3 +136,13 @@ ul.bm a:hover{
     border: 1px solid #555;
     padding: 10px;
 }
+
+#blogo{
+    display: inline;
+    text-align: left;
+    height: 30px;
+}
+
+#blogo a{
+    text-decoration: none;
+}
