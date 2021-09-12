@@ -83,25 +83,23 @@ section *{
 
 /* 3. 하단영역 */
 .info{
-    position:fixed; 
-    bottom:0px; 
-    height:100px; 
-    width:100%; 
-    padding: 15px;
-    float: left;
-    background:rgba(0, 0, 0, 0.418); 
-    display: block;
-    text-align: left;
-    color: aliceblue;
-
+    width:100%;
+    height:110px;
+    position:absolute;
+    bottom:0;
+    background:rgba(0, 0, 0, 0.635);
+    text-align: center;
+    color: #ccc;
 }
 
 /* 하단링크 */
 ul.bm{
-
-    text-align: left;
-    padding: 15px;
-    list-style: none;
+    display: inline-block;
+    width: auto; 
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding-top: 10px;
+    list-style: none; 
 }
 
 ul.bm::after{
@@ -113,4 +111,28 @@ ul.bm::after{
 ul.bm li{
     float:left;
     padding: 0 5px;
+}
+
+ul.bm a{
+    color: #ccc;
+    text-decoration: none;
+    font: bold 14px "맑은 고딕";
+}
+
+ul.bm a:hover{
+    color: #e1f33aa2;
+    text-decoration: underline;
+}
+
+/* 주소박스 */
+.info address{
+    width: 740px;
+    max-width: 90%;
+    margin: 0 auto;
+    
+    font-style: unset;
+    font: normal 14px "맑은고딕";
+
+    border: 1px solid #555;
+    padding: 10px;
 }
