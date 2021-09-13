@@ -139,9 +139,15 @@ ul.bm a:hover{
 }
 
 #blogo{
+    float: left;
     display: inline;
-    text-align: left;
-    height: 30px;
+}
+
+address::after{
+    content: "";
+    display: block;
+    clear: both;
+
 }
 
 #blogo a{
