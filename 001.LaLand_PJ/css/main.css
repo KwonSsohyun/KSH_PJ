@@ -127,10 +127,9 @@ ul.bm a:hover{
 
 /* 주소박스 */
 .info address{
-    position: fixed;
-    width: 100%;
-
+    width: 500px;
     max-width: 90%;
+    margin: 0 auto;
     
     font-style: unset;
     font: normal 14px "맑은고딕";
@@ -140,10 +139,14 @@ ul.bm a:hover{
 }
 
 #blogo{
-    float: left;
-    display: inline;
+    width: 80%;
+    margin: 0 auto;
 }
 
+#blogo img{    
+    float: left;
+    margin-top: 10px;
+}
 address::after{
     content: "";
     display: block;
