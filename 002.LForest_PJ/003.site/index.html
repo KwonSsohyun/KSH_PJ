@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Forest PJ</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script>
+        function gogo(yo) {
+            document.getElementById("tg").src = "https://www.youtube.com/embed/"+
+                yo+
+                "?autoplay=1&start=1&end=30;&loop=1&playlist="+
+                yo;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 1. 상단영역 -->
+    <header id="top" class="part">
+        <!-- 1-1. 페이지 타이틀 -->
+        <h1 class="tit">Little Forest</h1>
+
+
+
+
+    </header>
+
+    <!-- 2. 메인영역 -->
+    <main id="cont" class="part">
+        <!-- 2-1. 스크린박스 -->
+        <div id="screen">
+            <iframe id="tg"
+                src="https://www.youtube.com/embed/EvlcpKoPJXw?autoplay=1&start=1&end=30;&loop=1&playlist=EvlcpKoPJXw"
+                allow="autoplay"></iframe>
+        </div>
+
+        <!-- 2-2. 음식편 선택메뉴 -->
+        <div class="mlist">
+            <ul>
+                <li>
+                    <a href="#" onclick="gogo('Rw9RCU020nk');return false;">
+                        <!-- 사진 -->
+                        <img src="./images/lf1.jpg" alt="꽃파스타">
+                        <!-- 정보 -->
+                        <ol class="movtxt">
+                            <li>봄의 제철</li>
+                            <li>꽃파스타</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('WMrlHVJwEtE');return false;">
+                        <!-- 사진 -->
+                        <img src="./images/lf2.jpg" alt="아카시아꽃 튀김">
+                        <!-- 정보 -->
+                        <ol class="movtxt">
+                            <li>봄의 제철</li>
+                            <li>아카시아꽃 튀김</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('50XMOJP-98U');return false;">
+                        <!-- 사진 -->
+                        <img src="./images/lf3.jpg" alt="오이 콩국수">
+                        <!-- 정보 -->
+                        <ol class="movtxt">
+                            <li>여름의 제철</li>
+                            <li>오이 콩국수</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('6hF9saheUZ0');return false;">
+                        <!-- 사진 -->
+                        <img src="./images/lf4.jpg" alt="시루떡">
+                        <!-- 정보 -->
+                        <ol class="movtxt">
+                            <li>겨울의 제철</li>
+                            <li>시루떡</li>
+                        </ol>
+                    </a>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+
+
+    </main>
+
+    <!-- 3. 하단영역 -->
+    <footer id="info" class="part">
+
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

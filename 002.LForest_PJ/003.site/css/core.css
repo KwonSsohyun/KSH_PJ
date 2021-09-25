@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* Little Forest PJ 공통핵심 CSS - core.css */
+/* 웹폰트, 공통 클래스 */
+
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Homemade+Apple&family=Nanum+Gothic+Coding&display=swap');
+/* 
+    font-family: 'Gowun Dodum', sans-serif;
+    font-family: 'Homemade Apple', cursive;
+    font-family: 'Nanum Gothic Coding', monospace;
+*/
+
+/* IR 클래스 - 스프라이츠 설명안내 글자 안보이게 하기 */
