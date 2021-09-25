@@ -16,14 +16,14 @@
 /************************ 1. 상단영역 *************************/
 #top{
     height: 220px;
-    background: url(../images/bg_01.jpg);
+    background: url(../images/bg_01.jpg) no-repeat;
 }
 
 .tit{
     font-family: 'Homemade Apple', cursive;
     color: #f4ffd2;
     font-size: 70px;
-    line-height: 220px;
+    line-height: 300px;
     text-align: center;
     text-shadow: 10px 10px blur #000;
 }
@@ -92,7 +92,7 @@
     color: rgb(193, 233, 112);
     font-size: 20px;
     font-weight: bold;
-    margin-top: 60px;
+    margin-top: 65px;
     letter-spacing: -1px;
 }
 
