@@ -80,7 +80,7 @@
 
     width: 0;
     height: 0;
-    border-bottom: 10px solid rgb(177, 165, 0);
+    border-bottom: 10px solid #d3a45c;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
@@ -93,9 +93,10 @@
     float: none;
     font-size: 16px;
     line-height: 2;
+    text-shadow: 0 0 5px #000;
 }
 .smenu a:hover{
-    color: rgb(217, 255, 0);
+    color: #d9ff00;
 }
 
 .smenu a:hover::after{
