@@ -52,7 +52,7 @@ body::after{
 }
 #enter:hover span{
     transform: scale(1.5);
-    color: lime;
+    color: #b0c631;
 }
 
 #enter img{
