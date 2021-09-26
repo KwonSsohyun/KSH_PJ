@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* Little Forest PJ 인트로 페이지 CSS - intro.css */
+
+/* 공통 외부파일 합치기(머징) */
+@import url(./reset.css);
+@import url(./core.css);
+
+html,body{
+    height: 100%;
+}
+
+#myvid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body::after{
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+
+/* 버튼박스 */
+#enter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#enter img{
+    width: 250px;
+    opacity: .8;
+}
+#enter span{
+    display: block;
+    text-align: center;
+
+    font: bold 70px/150px 'Homemade Apple';
+
+    transition: all .4s ease-out .2s;
+}
+#enter:hover span{
+    transform: scale(1.5);
+    color: lime;
+}
+
+#enter img{
+    transition: transform .4s ease-out;
+}
+#enter:hover img{
+    transform: rotate(-10deg);
+}
+
