@@ -138,12 +138,17 @@
     overflow: hidden;
 }
 .mlist ul>li{
+    position: relative;
+    /* 부모자격 */    
+    width: 180px;
+    height: 180px;
     margin: 0 10px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .mlist img{
     width: 180px;
     height: 180px;
-    border-radius: 50%;
 }
 
 .movtxt{
@@ -184,8 +189,9 @@
 /************************ 3. 하단영역 *************************/
 #info{
     position: relative;
-    height: 150px;
+    /* height: 150px; */
     background-color: rgb(7, 36, 0);
+    padding-bottom: 10px;
 }
 
 /* 3-1. 회사정보박스 */
@@ -198,20 +204,43 @@
 
     padding-top: 30px;
     padding-left: 20px;
-    margin-left: 50px;
+
+    width: 801px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 #info img{
+    display: block;
     float: left;
     margin-right: 20px;
     opacity: .8;
 }
+#info address>div{
+    position: relative;
+    /* 부모자격 */
+}
+#info address>div>span{
+    display: block;
+    float: left;
+}
+#info address>div>span:first-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 100%;
+    background: url(../images/blogo.png) no-repeat left center;
+}
+#info address>div>span:last-child{    
+    width: calc(100% - 160px);
+    margin-left: 160px;
+}
 
 /* 3-2. SNS */
 .sns{
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    width: 114px;
+    margin: 5px auto;
 }
 
 .sns li{
@@ -243,4 +272,11 @@
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.clb::after{
+    content: '';
+    display: block;
+    clear: both;
+
 }
