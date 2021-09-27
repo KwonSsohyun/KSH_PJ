@@ -144,7 +144,9 @@
     height: 180px;
     margin: 0 10px;
     border-radius: 50%;
-    overflow: hidden;
+    overflow: hidden; /* 부모자격에 주니 아까 박스에서 시작을 했던 거다.
+    그러니 직접 원인 영역에 원 해당 
+    크기만큼width/height / border-radius / overflow: hidden 을 주는 것이다. */
 }
 .mlist img{
     width: 180px;
@@ -202,23 +204,16 @@
     font-size: 14px;
     line-height: 20px;
 
-    padding-top: 30px;
-    padding-left: 20px;
+    padding-top: 30px; /* 위에 간격 30px 띄어줌 */
 
-    width: 801px;
-    max-width: 90%;
+    width: 801px; /* 너비값을 줬기때문에 마영오가 먹는것!!! -> 왜냐하면 address는 블록이라 끝까지 차지하니 너비값을 주는것임! */
+    max-width: 90%; /* 창이 작아졌을때 화면의 90%유지 */
     margin: 0 auto;
 }
 
-#info img{
-    display: block;
-    float: left;
-    margin-right: 20px;
-    opacity: .8;
-}
 #info address>div{
     position: relative;
-    /* 부모자격 */
+    /* 부모자격 줌! */
 }
 #info address>div>span{
     display: block;
@@ -226,21 +221,22 @@
 }
 #info address>div>span:first-child{
     position: absolute;
+    /* 부모 : #info address>div 로 박스 그 영역만큼 이동! */
     top: 0;
     left: 0;
     width: 160px;
-    height: 100%;
-    background: url(../images/blogo.png) no-repeat left center;
+    height: 100%; /* 부모의 내용이 늘어나면 그 만큼 높이값도 이동! */
+    background: url(../images/blogo.png) no-repeat left center; /* left center : 정보글이랑 간격주려고 왼쪽부터 시작하는데 가운데 정렬함! */
 }
 #info address>div>span:last-child{    
     width: calc(100% - 160px);
-    margin-left: 160px;
+    margin-left: 160px; /* 정보글이 로고이미자가 160px이니까 거기 기준으로 밀고 시작이어서 마진왼쪽 시작값이 160px */
 }
 
 /* 3-2. SNS */
 .sns{
-    width: 114px;
-    margin: 5px auto;
+    width: 114px; /* 너비값을 줘서 마영오 먹는다! */
+    margin: 20px auto; /* 20px - 위아래 너비가 20px로 줘서 간격 띄어줌! */
 }
 
 .sns li{
