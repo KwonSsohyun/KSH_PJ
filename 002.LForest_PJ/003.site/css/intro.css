@@ -7,11 +7,15 @@
 
 html,body{
     height: 100%;
+    overflow: hidden;
 }
 
 #myvid{
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -20%;
+    left: -20%;
     object-fit: cover;
 }
 
@@ -47,7 +51,7 @@ body::after{
     display: block;
     text-align: center;
 
-    font: bold 70px/150px 'Homemade Apple';
+    font: bold 6vmin/150px 'Homemade Apple';
 
     transition: all .4s ease-out .2s;
 }
