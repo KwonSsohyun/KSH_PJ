@@ -220,7 +220,7 @@
 
 /* 마우스 오버시 글자색 */
 .gnb a:hover{
-    color: #f00;
+    color: #ca3829;
 }
 
 
@@ -339,7 +339,7 @@
 
 /* 탑버튼 마우스 오버시 */
 .tbtn:hover{
-    background-color: #f00;
+    background-color: #ca3829;
 
 }
     
