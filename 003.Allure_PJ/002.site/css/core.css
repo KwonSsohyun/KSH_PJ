@@ -132,7 +132,7 @@
 
 /* .cbx에 마우스 오버시 보더 생기기 */
 .cbx:hover::after{
-    border: 20px solid #f00;
+    border: 20px solid #ef8075;
 }
 
 /* 컨텐츠 타이틀 박스 */
